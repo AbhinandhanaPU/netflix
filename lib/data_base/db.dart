@@ -12,6 +12,10 @@ class DataBase {
     {"imageurl": "asset/images/Rectangle 3.png", "name": "Onyeka"},
     {"imageurl": "asset/images/Rectangle 4.png", "name": "Thelma"},
     {"imageurl": "asset/images/Rectangle 5.png", "name": "Kids"},
+    {"imageurl": "asset/images/Rectangle 2.png", "name": "Emenalo"},
+    {"imageurl": "asset/images/Rectangle 3.png", "name": "Onyeka"},
+    {"imageurl": "asset/images/Rectangle 4.png", "name": "Thelma"},
+    {"imageurl": "asset/images/Rectangle 5.png", "name": "Kids"},
   ];
 
   static List<String> homeMovieList = [
