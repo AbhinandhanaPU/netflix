@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:netflix/data_base/db.dart';
+import 'package:netflix/utils/data_base/db.dart';
 import 'package:netflix/utils/color_constant/color_constant.dart';
 
 class MoviesListBuilder extends StatelessWidget {

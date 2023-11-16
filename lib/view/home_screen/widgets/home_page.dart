@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:netflix/data_base/db.dart';
+import 'package:netflix/utils/data_base/db.dart';
 import 'package:netflix/utils/color_constant/color_constant.dart';
 import 'package:netflix/utils/image_constant/image_constant.dart';
 import 'package:netflix/view/home_screen/widgets/blackscreen.dart';
