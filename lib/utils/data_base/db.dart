@@ -6,7 +6,6 @@ class DataBase {
     {"imageurl": "asset/images/Rectangle 5.png", "name": "Kids"},
   ];
 
-  static String homeScreen = "asset/images/Rectangle 26.png";
   static List<Map> topSearch = [
     {"imageurl": "asset/images/Rectangle 2.png", "name": "Emenalo"},
     {"imageurl": "asset/images/Rectangle 3.png", "name": "Onyeka"},
@@ -44,5 +43,13 @@ class DataBase {
     "asset/images/Group 93.png",
     "asset/images/Group 92.png",
     "asset/images/Group 94.png",
+  ];
+
+  static List<String> sliderImages = [
+    "asset/images/Rectangle 26.png",
+    "asset/images/movie1.jpg",
+    "asset/images/movie2.jpg",
+    "asset/images/movie3.jpg",
+    "asset/images/images.jpeg",
   ];
 }

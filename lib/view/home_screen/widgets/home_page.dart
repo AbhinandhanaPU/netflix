@@ -1,3 +1,4 @@
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:netflix/utils/data_base/db.dart';
 import 'package:netflix/utils/color_constant/color_constant.dart';
@@ -25,15 +26,26 @@ class HomePage extends StatelessWidget {
           children: [
             Stack(
               children: [
-                Container(
-                  height: 415,
-                  decoration: BoxDecoration(
-                      color: Colors.amber,
-                      image: DecorationImage(
-                          image: AssetImage(DataBase.homeScreen),
-                          fit: BoxFit.fill)),
-                ),
+                CarouselSlider.builder(
+                    itemCount: 5,
+                    itemBuilder: (context, index, realIndex) {
+                      return Container(
+                        decoration: BoxDecoration(
+                            // color: Colors.amber,
+                            image: DecorationImage(
+                                image: AssetImage(DataBase.sliderImages[index]),
+                                fit: BoxFit.fill)),
+                      );
+                    },
+                    options: CarouselOptions(
+                      autoPlay: true,
+                      height: 430,
+                      viewportFraction: 1,
+                    )),
                 Positioned(
+                  top: 20,
+                  left: 0,
+                  right: 0,
                   child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
