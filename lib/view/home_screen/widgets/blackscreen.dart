@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/utils/color_constant/color_constant.dart';
-import 'package:netflix/view/bottonnav_screen.dart';
+import 'package:netflix/view/bottomnav_screen/bottonnav_screen.dart';
 import 'package:netflix/view/home_screen/widgets/home_page.dart';
 import 'package:netflix/view/home_screen/widgets/mylist_screen.dart';
 

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix/utils/data_base/db.dart';
 import 'package:netflix/utils/color_constant/color_constant.dart';
 import 'package:netflix/utils/image_constant/image_constant.dart';
-import 'package:netflix/view/bottonnav_screen.dart';
+import 'package:netflix/view/bottomnav_screen/bottonnav_screen.dart';
 
 class UserNameScreen extends StatelessWidget {
   const UserNameScreen({super.key});

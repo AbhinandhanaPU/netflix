@@ -21,49 +21,52 @@ class HomePage extends StatelessWidget {
       backgroundColor: ColorConstant.mainBlack,
       body: SingleChildScrollView(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              height: 415,
-              decoration: BoxDecoration(
-                  color: Colors.amber,
-                  image: DecorationImage(
-                      image: AssetImage(DataBase.homeScreen),
-                      fit: BoxFit.fill)),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  SafeArea(
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Image.asset(ImageConstant.netflixLogoIcon),
-                          InkWell(
-                              onTap: () => Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => BlackScreen(
-                                          showsWeight: FontWeight.w600,
-                                          showsSize: 29.68))),
-                              child: Text("Tv Shows", style: topTabTextStyle)),
-                          InkWell(
-                              onTap: () => Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => BlackScreen(
-                                          moviesweight: FontWeight.w600,
-                                          moviesSize: 29.68))),
-                              child: Text("Movies", style: topTabTextStyle)),
-                          InkWell(
-                              onTap: () => Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => MyList())),
-                              child: Text("My List", style: topTabTextStyle)),
-                        ]),
-                  ),
-                  Row(
+            Stack(
+              children: [
+                Container(
+                  height: 415,
+                  decoration: BoxDecoration(
+                      color: Colors.amber,
+                      image: DecorationImage(
+                          image: AssetImage(DataBase.homeScreen),
+                          fit: BoxFit.fill)),
+                ),
+                Positioned(
+                  child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Image.asset(ImageConstant.netflixLogoIcon),
+                        InkWell(
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => BlackScreen(
+                                        showsWeight: FontWeight.w600,
+                                        showsSize: 29.68))),
+                            child: Text("Tv Shows", style: topTabTextStyle)),
+                        InkWell(
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => BlackScreen(
+                                        moviesweight: FontWeight.w600,
+                                        moviesSize: 29.68))),
+                            child: Text("Movies", style: topTabTextStyle)),
+                        InkWell(
+                            onTap: () => Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => MyList())),
+                            child: Text("My List", style: topTabTextStyle)),
+                      ]),
+                ),
+                Positioned(
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -81,9 +84,9 @@ class HomePage extends StatelessWidget {
                             color: ColorConstant.mainWhite),
                       )
                     ],
-                  )
-                ],
-              ),
+                  ),
+                )
+              ],
             ),
             SizedBox(height: 10),
             Row(
