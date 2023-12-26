@@ -41,6 +41,7 @@ class _MoreScreenState extends State<MoreScreen> {
             ContainerGroup(),
             Row(
               children: [
+                SizedBox(width: 10),
                 Icon(
                   Icons.check,
                   color: ColorConstant.mainWhite,

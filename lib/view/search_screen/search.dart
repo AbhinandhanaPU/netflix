@@ -54,7 +54,10 @@ class _SearchScreenState extends State<SearchScreen> {
                 child: ListView.separated(
                   // shrinkWrap: true,
                   // physics: AlwaysScrollableScrollPhysics(),
-                  separatorBuilder: (context, index) => Divider(height: 5),
+                  separatorBuilder: (context, index) => Divider(
+                    height: 5,
+                    color: ColorConstant.mainBlack,
+                  ),
                   itemCount: DataBase.topSearch.length,
                   itemBuilder: (context, index) {
                     return TopSearch(indexNum: index);

@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
                   left: 0,
                   right: 0,
                   child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
                       children: [
                         Image.asset(ImageConstant.netflixLogoIcon),
                         InkWell(

@@ -8,6 +8,7 @@ class ContainerGroup extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // share link container
     return Container(
       width: double.infinity,
       height: 247,
@@ -76,7 +77,6 @@ class ContainerGroup extends StatelessWidget {
               ],
             ),
             Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.end,
               children: List.generate(
                 DataBase.shareList.length + 1,

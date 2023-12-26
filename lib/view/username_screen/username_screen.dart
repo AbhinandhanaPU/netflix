@@ -39,7 +39,7 @@ class UserNameScreen extends StatelessWidget {
                     crossAxisCount: 2,
                     crossAxisSpacing: 25,
                     mainAxisSpacing: 22,
-                    mainAxisExtent: 121),
+                    mainAxisExtent: 130),
                 itemBuilder: (context, index) {
                   return index == DataBase.userProfileList.length
                       ? Column(children: [

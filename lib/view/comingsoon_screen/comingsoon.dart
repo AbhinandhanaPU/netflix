@@ -41,26 +41,6 @@ class ComingSoonScreen extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              // Padding(
-              //   padding: const EdgeInsets.all(8.0),
-              //   child: Row(
-              //     children: [
-              //       Icon(
-              //         Icons.circle_notifications_rounded,
-              //         size: 19,
-              //         color: Colors.red,
-              //       ),
-              //       SizedBox(width: 10),
-              //       Text(
-              //         "Notifications",
-              //         style: TextStyle(
-              //             color: ColorConstant.mainWhite,
-              //             fontSize: 16.91,
-              //             fontWeight: FontWeight.w700),
-              //       ),
-              //     ],
-              //   ),
-              // ),
               ListView.builder(
                 shrinkWrap: true,
                 physics: NeverScrollableScrollPhysics(),

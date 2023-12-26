@@ -47,7 +47,7 @@ class MoviesComingSoon extends StatelessWidget {
                         Column(
                           children: [
                             Icon(
-                              Icons.notifications,
+                              Icons.notifications_none,
                               size: 24,
                               color: ColorConstant.mainWhite,
                             ),

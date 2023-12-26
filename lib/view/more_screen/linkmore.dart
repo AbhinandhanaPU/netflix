@@ -37,7 +37,6 @@ class MoreDots extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
         Icon(
           Icons.more_horiz,
