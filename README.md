@@ -9,7 +9,7 @@ The Netflix App UI Clone repository is a project that replicates the user interf
 - 🗂️ Git: version control system for tracking changes and collaborating with others.
 - 🌐 GitHub: hosting platform for managing and sharing the repository.
 
-## Screenshots
+## App Preview
 
 <img src="https://github.com/AbhinandhanaPU/netflix_clone/blob/main/screenshots/1.png" width="32%">  <img src="https://github.com/AbhinandhanaPU/netflix_clone/blob/main/screenshots/2.png" width="32%">  <img src="https://github.com/AbhinandhanaPU/netflix_clone/blob/main/screenshots/3.png" width="32%">  <img src="https://github.com/AbhinandhanaPU/netflix_clone/blob/main/screenshots/4.png" width="32%">  <img src="https://github.com/AbhinandhanaPU/netflix_clone/blob/main/screenshots/5.png" width="32%">  <img src="https://github.com/AbhinandhanaPU/netflix_clone/blob/main/screenshots/6.png" width="32%">  <img src="https://github.com/AbhinandhanaPU/netflix_clone/blob/main/screenshots/7.png" width="32%">  <img src="https://github.com/AbhinandhanaPU/netflix_clone/blob/main/screenshots/8.png" width="32%">  <img src="https://github.com/AbhinandhanaPU/netflix_clone/blob/main/screenshots/9.png" width="32%">
 
