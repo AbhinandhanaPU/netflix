@@ -47,7 +47,7 @@ class ComingSoonScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(2),
                           image: DecorationImage(
                               image: AssetImage(
-                                DataBase.moviesList[index]["movieImage"],
+                                DataBase.comingSHeader[index]["movieImage"],
                               ),
                               fit: BoxFit.fill),
                         ),
@@ -65,14 +65,14 @@ class ComingSoonScreen extends StatelessWidget {
                                 color: ColorConstant.mainWhite),
                           ),
                           Text(
-                            DataBase.moviesList[index]["movieName"],
+                            DataBase.comingSHeader[index]["movieName"],
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 13.72,
                                 color: ColorConstant.mainWhite),
                           ),
                           Text(
-                            DataBase.moviesList[index]["date"],
+                            DataBase.comingSHeader[index]["date"],
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 10.51,
