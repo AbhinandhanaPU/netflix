@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/utils/color_constant/color_constant.dart';
+import 'package:netflix/utils/data_base/db.dart';
 import 'package:netflix/view/comingsoon_screen/movies_coming_soon.dart';
 
 class ComingSoonScreen extends StatelessWidget {
@@ -7,19 +8,6 @@ class ComingSoonScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<Map> moviesList = [
-      {
-        "movieImage": "asset/images/Rectangle 20.png",
-        "movieName": "El Chapo",
-        "date": "nov 6"
-      },
-      {
-        "movieImage": "asset/images/Rectangle 21.png",
-        "movieName": "Peaky Blinders",
-        "date": "nov 6"
-      }
-    ];
-
     return SafeArea(
       child: Scaffold(
         backgroundColor: ColorConstant.mainBlack,
@@ -56,11 +44,10 @@ class ComingSoonScreen extends StatelessWidget {
                         height: 55,
                         width: 113,
                         decoration: BoxDecoration(
-                          // color: Colors.amber,
                           borderRadius: BorderRadius.circular(2),
                           image: DecorationImage(
                               image: AssetImage(
-                                moviesList[index]["movieImage"],
+                                DataBase.moviesList[index]["movieImage"],
                               ),
                               fit: BoxFit.fill),
                         ),
@@ -78,14 +65,14 @@ class ComingSoonScreen extends StatelessWidget {
                                 color: ColorConstant.mainWhite),
                           ),
                           Text(
-                            moviesList[index]["movieName"],
+                            DataBase.moviesList[index]["movieName"],
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 13.72,
                                 color: ColorConstant.mainWhite),
                           ),
                           Text(
-                            moviesList[index]["date"],
+                            DataBase.moviesList[index]["date"],
                             style: TextStyle(
                                 fontWeight: FontWeight.w500,
                                 fontSize: 10.51,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/utils/color_constant/color_constant.dart';
 import 'package:netflix/view/bottomnav_screen/bottonnav_screen.dart';
-import 'package:netflix/view/home_screen/widgets/home_page.dart';
 import 'package:netflix/view/home_screen/widgets/mylist_screen.dart';
 
 class BlackScreen extends StatelessWidget {
@@ -49,7 +48,7 @@ class BlackScreen extends StatelessWidget {
                       context,
                       DialogRoute(
                         context: context,
-                        builder: (context) => HomePage(),
+                        builder: (context) => BottomNavScreen(),
                       )),
                   child: Text("TV Shows ",
                       style: TextStyle(
@@ -62,7 +61,7 @@ class BlackScreen extends StatelessWidget {
                       context,
                       DialogRoute(
                         context: context,
-                        builder: (context) => HomePage(),
+                        builder: (context) => BottomNavScreen(),
                       )),
                   child: Text("Movies",
                       style: TextStyle(
@@ -93,7 +92,7 @@ class BlackScreen extends StatelessWidget {
               context,
               DialogRoute(
                 context: context,
-                builder: (context) => HomePage(),
+                builder: (context) => BottomNavScreen(),
               ));
         },
         child: Icon(

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:netflix/utils/color_constant/color_constant.dart';
+import 'package:netflix/utils/data_base/db.dart';
 import 'package:netflix/utils/image_constant/image_constant.dart';
 import 'package:netflix/view/home_screen/widgets/blackscreen.dart';
 
@@ -40,7 +41,7 @@ class MyList extends StatelessWidget {
                 child: GridView.builder(
                   shrinkWrap: true,
                   physics: NeverScrollableScrollPhysics(),
-                  itemCount: 30,
+                  itemCount: DataBase.myList.length,
                   gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 3,
                       crossAxisSpacing: 11,
@@ -51,8 +52,7 @@ class MyList extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: Colors.amber,
                           image: DecorationImage(
-                              image: AssetImage(
-                                  "asset/images/Rectangle 16 (1).png"),
+                              image: AssetImage(DataBase.myList[index]),
                               fit: BoxFit.cover)),
                     );
                   },

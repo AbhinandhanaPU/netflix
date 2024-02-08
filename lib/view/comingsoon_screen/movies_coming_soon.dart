@@ -102,6 +102,7 @@ class MoviesComingSoon extends StatelessWidget {
                           fontWeight: FontWeight.w400,
                           fontSize: 11.14,
                           color: ColorConstant.mainWhite),
+                      textAlign: TextAlign.justify,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,

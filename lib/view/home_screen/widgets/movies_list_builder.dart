@@ -21,10 +21,7 @@ class MoviesListBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(
-        left: 10,
-        top: 22,
-      ),
+      padding: EdgeInsets.only(left: 10, top: 22),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -49,7 +46,6 @@ class MoviesListBuilder extends StatelessWidget {
                     height: height,
                     width: 103,
                     decoration: BoxDecoration(
-                        // color: Colors.amber,
                         shape: shape,
                         image: DecorationImage(
                             image: AssetImage(imagepath[index]),

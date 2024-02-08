@@ -41,6 +41,7 @@ class ContainerGroup extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                   fontSize: 10.78,
                   color: ColorConstant.mainWhite),
+              textAlign: TextAlign.justify,
             ),
             Text(
               "Terms & Conditions",

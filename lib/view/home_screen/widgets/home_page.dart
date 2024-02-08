@@ -26,6 +26,7 @@ class HomePage extends StatelessWidget {
           children: [
             Stack(
               children: [
+                // image slider wodget
                 CarouselSlider.builder(
                     itemCount: 5,
                     itemBuilder: (context, index, realIndex) {
@@ -42,6 +43,8 @@ class HomePage extends StatelessWidget {
                       height: 430,
                       viewportFraction: 1,
                     )),
+
+                //top positioned tabs
                 Positioned(
                   top: 20,
                   left: 0,
@@ -101,6 +104,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
             SizedBox(height: 10),
+            // play button
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
@@ -150,11 +154,12 @@ class HomePage extends StatelessWidget {
                 )
               ],
             ),
+            // list of movies catogory
             MoviesListBuilder(
               title: "Previews",
               height: 102,
               shape: BoxShape.circle,
-              imagepath: DataBase.homeMovieList,
+              imagepath: DataBase.homeMovieListRound,
             ),
             MoviesListBuilder(
               title: "Continue Watching for Emenalo",

@@ -38,6 +38,7 @@ class DownloadScreen extends StatelessWidget {
                     fontSize: 10.78,
                     fontWeight: FontWeight.w400,
                     color: ColorConstant.mainWhite),
+                textAlign: TextAlign.justify,
               ),
               SizedBox(height: 20),
               Center(
